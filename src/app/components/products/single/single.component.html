@@ -1,0 +1,19 @@
+<app-navigation></app-navigation>
+<div class="container">
+  <div class="columns">
+    <div class="column1">
+      <img class="product-image" [src]="product.image" [alt]="product.description">
+    </div>
+    <div class="column2">
+      <h1 class="product-title">{{product.name}}</h1>
+      <p>{{product.description}}</p>
+      <h2 class="price">${{product.price}}</h2>
+      <p>{{product.quantity}} units in stock</p>
+      <p class="notification" *ngIf="appService.isNotificationOpen">¡<b>{{product.name}}</b> agregado al carrito de compras!</p>
+      <button type="button" (click)="appService.addProduct(product)" [routerLink]="['/shop', product.id]" class="button">Add to cart&nbsp;&nbsp;<i [ngStyle]="{
+      }" class="bi bi-cart4"></i></button>
+    </div>
+  </div>
+</div>
+<p>{{ product.id }}</p>
+<app-footer></app-footer>

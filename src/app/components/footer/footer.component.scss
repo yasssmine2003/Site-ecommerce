@@ -1,0 +1,12 @@
+.footer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 5rem;
+  padding: 5rem;
+  background: #181818;
+  color: white;
+}
+
+.footer-image {
+  height: 120px;
+}

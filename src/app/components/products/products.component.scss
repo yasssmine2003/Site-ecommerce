@@ -1,0 +1,42 @@
+.product {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 1rem;
+  border: 1px solid #efefef;
+  padding: 1rem;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  box-shadow: 0px 10px 44px -21px rgba(0,0,0,0.1),0px 10px 15px -3px rgba(0,0,0,0.1),0px 10px 15px -3px rgba(0,0,0,0.1);
+  .product-image {
+    height: 200px;
+  }
+  .price {
+    color: rgb(238, 184, 117);
+  }
+}
+
+.button1 {
+  display: flex;
+  align-items: center;
+  background-color: black;
+  color: white;
+  outline: none;
+  opacity: 0.8;
+  padding: 1rem;
+  border-radius: 2rem;
+  transition: 0.3s;
+  border: none;
+}
+
+.button1:hover {
+  cursor: pointer;
+  opacity: 1;
+  background-color: rgb(255, 197, 125);
+}
+
+.productsList {
+  display: grid;
+  margin: 0 auto;
+  gap: 2rem;
+  grid-template-columns: repeat(4, 1fr);
+}
